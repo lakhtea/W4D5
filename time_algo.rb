@@ -20,7 +20,7 @@ end
 # list = [ 0, 3, 5, 4, -5, 10, 1, 90 ]
 # p my_min(list)  # =>  -5  
 
-# def largest_contiguous_subsum(list) # => 0(n^2)
+# def largest_contiguous_subsum(list) # => 0(n^3)
 #     sub_arrs = []
 #     (0...list.length).each do |i|
 #         (0...list.length).each do |j|
