@@ -1,5 +1,5 @@
-# def anagram?(str_1, str_2) # O(n^3) or more time
-#     arr_1 = str_1.split("") # O(n^2) or more space
+# def anagram?(str_1, str_2) # O(n!) or more time
+#     arr_1 = str_1.split("") # O(n!) or more space
 #     arr_2 = str_2.split("")
 #     anas = arr_1.permutation(str_1.length).to_a
 #     anas.include?(arr_2) 
@@ -20,7 +20,7 @@
 # end
 
 # def anagram?(str_1, str_2) 
-#     hash_1 = Hash.new(0) #O(n) space
+#     hash_1 = Hash.new(0) #O(1) space
 #     hash_2 = Hash.new(0) 
 
 #     str_1.each_char { |char| hash_1[char] += 1 } #O(n) time
