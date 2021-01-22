@@ -26,14 +26,14 @@
 
 def two_sum?(arr, target) # => 0(n) space 0(n)
     hash = Hash.new(0)
-    arr.each_with_index {|ele, idx| hash[target - ele] = idx}
-    arr.each_with_index do |ele, idx|
-        if hash.has_key?(ele) && hash[ele] != idx
-            return true
-        end
-    end 
+    arr.each do |ele|
+        return true if hash.has_key?(ele)
+        hash[target - ele] = 0
+    end
     false
 end
+
+
 arr = [0, 1, 5, 7] 
 p two_sum?(arr, 6) # => should be true
 p two_sum?(arr, 10) # => should be false
